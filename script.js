@@ -20,3 +20,8 @@ let changePara = () => {
 btn.addEventListener("click", changePara);
 // mouseover event for funny effect
 btn.addEventListener("mouseover", changePara);
+
+// removing hover effect after 5 seconds
+setTimeout(() => {
+    btn.removeEventListener("mouseover", changePara);
+}, 5000);
