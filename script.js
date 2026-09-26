@@ -8,3 +8,8 @@ document.querySelector("body").prepend(newBtn);
 // Paragraph
 let para = document.querySelector("p");
 para.classList.add("para-2");
+
+// Event Listener using arrow function
+let changePara = () => {
+    para.classList.toggle("para-2");
+}
