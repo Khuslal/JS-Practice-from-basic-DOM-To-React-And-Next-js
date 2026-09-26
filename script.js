@@ -18,3 +18,5 @@ let changePara = () => {
 
 // click event
 btn.addEventListener("click", changePara);
+// mouseover event for funny effect
+btn.addEventListener("mouseover", changePara);
