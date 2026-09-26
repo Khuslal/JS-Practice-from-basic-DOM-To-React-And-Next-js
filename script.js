@@ -9,7 +9,12 @@ document.querySelector("body").prepend(newBtn);
 let para = document.querySelector("p");
 para.classList.add("para-2");
 
-// Event Listener using arrow function
+// Event Listener
+let btn = document.querySelector("#click-btn");
+
 let changePara = () => {
     para.classList.toggle("para-2");
 }
+
+// click event
+btn.addEventListener("click", changePara);
