@@ -25,3 +25,8 @@ btn.addEventListener("mouseover", changePara);
 setTimeout(() => {
     btn.removeEventListener("mouseover", changePara);
 }, 5000);
+
+// Destructuring
+let arr = [1, 2, 3, 4, 5];
+let [a, b] = arr;
+console.log(a, b);
