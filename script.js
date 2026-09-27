@@ -26,7 +26,12 @@ setTimeout(() => {
     btn.removeEventListener("mouseover", changePara);
 }, 5000);
 
-// Destructuring
-let arr = [1, 2, 3, 4, 5];
-let [a, ,...rest] = arr;
-console.log( a, rest);
+// Array Destructuring
+// let arr = [1, 2, 3, 4, 5];
+// let [a, , ...rest] = arr;
+// console.log(a, rest);
+
+// Object Destructuring
+let user = { name, age, contact } = { fname: 'khush', age: 23, contact: 9702500000 };
+let { fname, ...rest } = user;
+console.log(fname, rest);
