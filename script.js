@@ -28,5 +28,5 @@ setTimeout(() => {
 
 // Destructuring
 let arr = [1, 2, 3, 4, 5];
-let [a, b, ...rest] = arr;
-console.log(a, b, rest);
+let [a, ,...rest] = arr;
+console.log( a, rest);
