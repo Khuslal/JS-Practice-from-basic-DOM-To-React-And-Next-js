@@ -15,6 +15,6 @@ const books = [
 
 // filter books published after 2010
 const filteredBooks = books.filter((book) => {
-    return book.author == "Author 2";
+    return book.year === 2020;
 });
 console.log(filteredBooks);
