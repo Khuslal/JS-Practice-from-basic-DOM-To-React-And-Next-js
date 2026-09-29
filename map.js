@@ -6,4 +6,9 @@ const mapNumbers = number.map((num) => {
 });
 console.log(mapNumbers);
 
-  
+// Chaining map and filter functions
+const result = number
+    .map((num) => num * 10)
+    .map((num) => num + 1)
+    .filter((num) => num > 50)
+console.log(result)   
