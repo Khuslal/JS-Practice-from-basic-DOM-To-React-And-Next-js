@@ -1,11 +1,14 @@
+// 1. Example of reduce function to calculate the sum of an array of numbers
 const mynums = [1, 2, 3, 4, 5];
 
 // Zero is passed as the initial value for the accumulator or we can also create a variable 
 // and pass it as the initial value for the accumulator. If we don't pass any initial value,
-//  then the first element of the array will be used as the initial value for the accumulator.
+// then the first element of the array will be used as the initial value for the accumulator.
 const sum = mynums.reduce((accumulator, currentValue) => (accumulator + currentValue), 0);
 console.log(sum);
 
+
+// 2. Real world example of reduce function to calculate the total price of items in a shopping cart
 const shoppingCart = [
     { item: "item1", price: 100 },
     { item: "item2", price: 200 },
@@ -15,5 +18,5 @@ const shoppingCart = [
 ];
 
 // Calculate total price of items in the shopping cart using reduce
-const totalPrice = shoppingCart.reduce((acc, product) => { return acc + product.price }, 0);
+const totalPrice = shoppingCart.reduce((acc, product) => acc + product.price, 0);
 console.log(totalPrice);
