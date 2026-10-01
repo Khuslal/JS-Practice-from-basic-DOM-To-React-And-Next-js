@@ -35,3 +35,4 @@ setTimeout(() => {
 let user = { name, age, contact } = { fname: 'khush', age: 23, contact: 9702500000 };
 let { fname, ...rest } = user;
 console.log(fname, rest);
+console.log(fname, age, contact);
